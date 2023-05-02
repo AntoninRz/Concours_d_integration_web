@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Yanone+Kaffeesatz:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: white;
+    text-align: center;
+    overflow-x: hidden;
+}
+button {
+    background: rgb(37, 35, 156);
+    width: 200px;
+    padding: 10px;
+    border-radius: 7px;
+    margin: 20px;
+    color: white;
+    border: none;
+}
+button:hover {
+    transform: translateX(2px);
+    border: 2px solid;
+    background: rgb(125, 157, 167);
+}
+button:active {
+    transform: scale(0.9);
+}
+p, h2, h3 {
+    font-family: oswald, sans-serif;
+}
+
+/* ********************* HEADER ****************** */
+
+header {
+    background: url(./Media/bg-header.jpg)no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.logo {
+    height: 40px;
+    width: 100px;
+}
+ul {
+    width: 40%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover {
+    background: rgb(38, 104, 124);
+}
+.title {
+    color: white;
+    margin: 80px;
+    text-align: center;
+}
+h1 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 7rem;
+    padding: 10px;
+}
+@media screen and (max-width: 652px) {
+    h1 {
+        font-size: 3.5rem;
+    }
+}
+
+/* ******************** CONTENUS ******************** */
+/* *********************MENU******************** */
+#menu {
+    text-align: center;
+}
+#menu h2 {
+    color: blue;
+    font-size: 2rem;
+    font-family: oswald, sans-serif;
+}
+.menus {
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 500px;
+}
+.noodles {
+    background: white;
+    margin: 20px;
+    width: 300px;
+}
+.food {
+    width: 300px;
+    height: 300px;
+}
+.noodles h3 {
+    padding: 5px;
+}
+.noodles p {
+    padding: 5px;
+    margin: 10px 0;
+    display: -webkit-box;
+    width: 200px;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+
+/* ***************************** PROMO **************** */
+
+#promo {
+    margin: 50px 0 0 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "a b"
+    "c d";
+}
+.promos:nth-child(1) {
+    grid-area: a;
+}
+.promos:nth-child(2) {
+    grid-area: b;
+    padding: 30px;
+}
+.promos:nth-child(3) {
+    grid-area: c;
+    padding: 30px;
+}
+.promos:nth-child(4) {
+    grid-area: d;
+}
+.promos {
+    background: white;
+    width: 100%;
+    text-align: left;
+}
+.plat {
+    width: 100%;
+    height: 500px;
+}
+.promos h2 {
+    font-size: 4rem;
+}
+.promos p {
+    width: 80%;
+}
+
+/* ********************* ORDER ******************* */
+
+#order {
+    text-align: center;
+    color: aliceblue;
+    background: rgb(0, 123, 206);
+    padding-top: 40px;
+}
+.order h2 {
+    font-size: 4rem;
+}
+.order {
+    display: flex;
+    justify-content: space-evenly;
+}
+.orders {
+    margin: 20px;
+    width: 300px;
+    height: 40vh;
+}
+.number {
+    border-radius: 100px;
+    background: white;
+    color: black;
+    width: 20px;
+    margin: auto;
+    padding: 20px;
+}
+.order h3 {
+    margin: 20px;
+}
+
+/* ********************* DELIVERY **************** */
+
+#delivery {
+    padding: 20px;
+    background: #e9f5c9;
+}
+#delivery h2 {
+    font-size: 4rem;
+}
+#delivery p {
+    padding: 20px;
+}
+
+/* ******************* CITATION***************** */
+
+#quote {
+    background: linear-gradient(to top, #3776AC, #e9f5c9);;
+    height: 70vh;
+}
+.icon, .quote {
+    margin: 50px;
+    width: 40px;
+    height: 40px;
+}
+.auteur {
+    font-size: 3rem;
+    color: blue;
+}
+
+/* *****************    FOOTER  ***************** */
+
+footer {
+    color: aliceblue;
+    background: url(./Media/bg-footer.jpg)no-repeat center;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.about ul {
+    display: block;
+    list-style-type: circle;    
+}
+footer li a {
+    width: 100px;
+    padding: 10px;
+}
+.about p {
+    width: 400px;
+}
